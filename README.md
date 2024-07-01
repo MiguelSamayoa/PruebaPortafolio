@@ -6,7 +6,7 @@ Gestión de datos personales como nombre, dirección, correo electrónico y tel�
 Almacenamiento de imágenes de perfil y proyectos de manera local. Interfaz utilizando Bootstrap para estilos y componentes.
 
 ## Requisitos previos
-- PHP >= 7.4
+- PHP >= 8.2
 - Composer instalado globalmente
 - Servidor web (por ejemplo, Apache, Nginx) configurado con PHP
 - Tener un sistema de gestión de bases de datos instalado (puede ser MySQL, PostgreSQL, SQLite, etc.).  
