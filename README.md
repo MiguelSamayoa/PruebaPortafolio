@@ -27,6 +27,14 @@ composer install
 
 - **Configuración del entorno:**
     -  Renombra el archivo **.env.example** a **.env** y configura las variables de entorno según sea necesario para conectar con su base de datos.
+    ```git bash
+        DB_CONNECTION=gestor_base_de_datos
+        DB_HOST=db_host
+        DB_PORT=sb_port
+        DB_DATABASE=db_database
+        DB_USERNAME=db_username
+        DB_PASSWORD=db_password
+    ```
 
     - Genera una nueva clave de aplicación:
     ```git bash
