@@ -26,6 +26,11 @@ composer install
 ```
 
 - **Configuración del entorno:**
+    - Configura las rutas de las imagenes usando el comando:
+    ```git bash
+    php artisan storage:link
+    ```
+
     -  Renombra el archivo **.env.example** a **.env** y configura las variables de entorno según sea necesario para conectar con su base de datos.
     ```git bash
         DB_CONNECTION=gestor_base_de_datos
