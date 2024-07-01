@@ -18,7 +18,7 @@ class ProjectController extends Controller
 
     public function create(int $User_Id)
     {
-        return view('projects.create');
+        return view('projects.create', compact('User_Id') );
     }
 
 
@@ -59,7 +59,7 @@ class ProjectController extends Controller
         return view('projects.edit', compact('project'));
     }
 
-    public function update(Request $request, Project $project)
+    public function update(Request $request, int $User_Id, Project $project)
     {
         $request->validate([
             'title' => 'required|string|max:255',
@@ -92,7 +92,7 @@ class ProjectController extends Controller
             $project->update(['photo' => $photoUrl]);
         }
 
-        return redirect()->route('projects.index')->with('success', 'Project updated successfully.');
+        return redirect()->route('projects.index', $User_Id)->with('success', 'Project updated successfully.');
     }
 
 

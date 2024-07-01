@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-1 m-2">
-                <a href="{{ route('personal_data.index') }}" class="btn btn-primary">
+                <a href="{{ route('personal_data.index', request()->route()->parameter('User_Id')) }}" class="btn btn-primary">
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -38,7 +38,7 @@
                             <a href="{{ $project->project_url }}" class="m-1 col-7 btn btn-primary w-100" target="_blank" rel="noopener noreferrer">
                                 Ir al Proyecto
                             </a>
-                            <a href="{{ route('projects.edit', $project->id) }}" class="m-1 col-2 btn btn-primary w-100" rel="noopener noreferrer">
+                            <a href="{{ route('projects.edit', ['User_Id' => request()->route()->parameter('User_Id'), 'Id' => $project->id]) }}" class="m-1 col-2 btn btn-primary w-100" rel="noopener noreferrer">
                                 <i class="bi bi-pencil-square"></i>
                             </a>
                             <form action="{{ route('projects.destroy', ['User_Id' => request()->route()->parameter('User_Id'), 'Id' => $project->id]) }}" method="POST" class="m-1 col-2 p-0">

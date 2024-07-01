@@ -14,7 +14,7 @@
         </div>
     @endif
 
-    <form action="{{ route('projects.update', $project) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('projects.update', ['User_Id' => request()->route()->parameter('User_Id'), $project] ) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -48,7 +48,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Update Project</button>
-        <a href="{{ route('projects.index') }}" class="btn btn-secondary">Cancel</a>
+        <a href="{{ route('projects.index', request()->route()->parameter('User_Id')) }}" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 

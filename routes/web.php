@@ -8,12 +8,12 @@ use App\Http\Controllers\ProjectController;
 //Projects vistas
 Route::get('projects/{User_Id}', [ ProjectController::class, 'index' ] )->name('projects.index');
 Route::get('projects/create/{User_Id}', [ ProjectController::class, 'create' ] )->name('projects.create');
-Route::get('projects/edit/{Id}', [ ProjectController::class, 'edit' ])->name('projects.edit');
+Route::get('projects/edit/{User_Id}/{Id}', [ ProjectController::class, 'edit' ])->name('projects.edit');
 
 //Projects Acciones
 Route::delete('projects/{User_Id}/{Id}', [ ProjectController::class, 'destroy' ])->name('projects.destroy');
 Route::post('projects/{User_Id}', [ ProjectController::class, 'store' ])->name('projects.store');
-Route::put('projects/{project}', [ ProjectController::class, 'update' ])->name('projects.update');
+Route::put('projects/{User_Id}/{project}', [ ProjectController::class, 'update' ])->name('projects.update');
 
 
 //Personal-Data vistas
