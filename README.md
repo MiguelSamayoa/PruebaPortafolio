@@ -1,16 +1,16 @@
-*Proyecto Laravel XYZ
+# Proyecto Portafolio en Laravel
 Este es un proyecto desarrollado en Laravel que gestiona datos personales y proyectos. Proporciona una interfaz para administrar información personal y proyectos relacionados.
 
-**Características principales
+## Características principales
 Gestión de datos personales como nombre, dirección, correo electrónico y teléfono. Administración de proyectos incluyendo título, descripción, tecnologías utilizadas y enlaces relacionados.
 Almacenamiento de imágenes de perfil y proyectos de manera local. Interfaz utilizando Bootstrap para estilos y componentes.
 
-**Requisitos previos
+## Requisitos previos
 - PHP >= 7.4
 - Composer instalado globalmente
 - Servidor web (por ejemplo, Apache, Nginx) configurado con PHP
-
-**Instalación
+  
+## Instalación
 - **Clona el repositorio:**
 ```git bash
 git clone https://github.com/MiguelSamayoa/PruebaPortafolio.git
