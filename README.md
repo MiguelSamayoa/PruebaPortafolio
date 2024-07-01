@@ -9,6 +9,7 @@ Almacenamiento de imágenes de perfil y proyectos de manera local. Interfaz util
 - PHP >= 7.4
 - Composer instalado globalmente
 - Servidor web (por ejemplo, Apache, Nginx) configurado con PHP
+- Tener un sistema de gestión de bases de datos instalado (puede ser MySQL, PostgreSQL, SQLite, etc.).  
   
 ## Instalación
 - **Clona el repositorio:**
